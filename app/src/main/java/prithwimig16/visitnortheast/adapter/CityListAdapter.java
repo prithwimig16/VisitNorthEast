@@ -31,7 +31,7 @@ public class CityListAdapter extends ArrayAdapter {
 
 
     private int[] imageArray = new int[]{
-            R.drawable.assam, R.drawable.meghalaya, R.drawable.arunachal, R.drawable.sikkim, R.drawable.tripura, R.drawable.mizoram,
+            R.drawable.assam, R.drawable.meghalaya, R.drawable.home, R.drawable.sikkim, R.drawable.tripura, R.drawable.mizoram,
             R.drawable.manipur, R.drawable.nagaland,
 
     };
