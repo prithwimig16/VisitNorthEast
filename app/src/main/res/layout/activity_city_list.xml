@@ -1,8 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="prithwimig16.visitnortheast.activities.CityListActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/d_toolbar_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4682B4"
+        android:minHeight="?attr/actionBarSize">
+
+        <prithwimig16.visitnortheast.utils.CustomTitleTextView
+            android:id="@+id/tv_title_city_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/home_tag"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_toolbar_city_list"
+        android:padding="10dp">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:columnWidth="125dp"
+            android:numColumns="2"
+            android:scrollbars="vertical"
+            android:verticalSpacing="5dp"
+            android:visibility="visible">
+
+        </GridView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
