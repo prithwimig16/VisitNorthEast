@@ -20,4 +20,8 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
+    <style name="AppTheme.StatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
 </resources>

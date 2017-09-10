@@ -4,7 +4,10 @@
 
     <string name="dummy_button">Dummy Button</string>
     <string name="app_tag">Visit\nNorthEast</string>
-    <string name="home_tag">Visit NorthEast</string>
+    <string name="home_tag">East</string>
     <string name="home_tag1">Lets Explore</string>
+    <string name="home_tag0">Visit North</string>
+    <string name="home_title">Visit NorthEast</string>
+
 
 </resources>
