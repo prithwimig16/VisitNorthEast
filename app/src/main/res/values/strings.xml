@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Visit NorthEast</string>
 
-    <string name="title_activity_splashcreen">Visit NorthEast</string>
+
     <string name="dummy_button">Dummy Button</string>
     <string name="app_tag">Visit\nNorthEast</string>
     <string name="home_tag">Visit NorthEast</string>
