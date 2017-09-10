@@ -24,10 +24,11 @@ public class CityListAdapter extends ArrayAdapter {
     Context context;
     int layoutResourceId;
     CityListActivity cityListActivity;
-    private String[] placeName = new String[]{"  Assam  ", "  Tripura  ", "  Manipur  ", "  Mizoram  ", "  Sikkim  ", "  Arunachal  ", "  Meghalaya  "};
+    private String[] placeName = new String[]{"  Assam  ", "  Meghalaya  ", "  Arunachal  ", "  Sikkim  ", "  Tripura  ",
+            "  Mizoram  ", "  Manipur  "};
     private int[] imageArray = new int[]{
-            R.drawable.assam, R.drawable.tripura, R.drawable.manipur, R.drawable.mizoram, R.drawable.sikkim, R.drawable.arunachal,
-            R.drawable.shillong,
+            R.drawable.assam, R.drawable.shillong, R.drawable.arunachal, R.drawable.sikkim, R.drawable.tripura, R.drawable.mizoram,
+            R.drawable.manipur,
 
     };
 
