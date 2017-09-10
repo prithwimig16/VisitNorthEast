@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/home_title"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
     </android.support.v7.widget.Toolbar>
@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/d_toolbar_city_list"
         android:background="@android:color/white"
+        android:descendantFocusability="blocksDescendants"
         android:padding="5dp">
 
         <GridView

@@ -24,8 +24,12 @@ public class CityListAdapter extends ArrayAdapter {
     Context context;
     int layoutResourceId;
     CityListActivity cityListActivity;
+
+
     private String[] placeName = new String[]{"  Assam  ", "  Meghalaya  ", "  Arunachal  ", "  Sikkim  ", "  Tripura  ",
             "  Mizoram  ", "  Manipur  ", "  Nagaland  "};
+
+
     private int[] imageArray = new int[]{
             R.drawable.assam, R.drawable.meghalaya, R.drawable.arunachal, R.drawable.sikkim, R.drawable.tripura, R.drawable.mizoram,
             R.drawable.manipur, R.drawable.nagaland,
@@ -64,6 +68,7 @@ public class CityListAdapter extends ArrayAdapter {
         }
 
         holder.imageItem.setTag("" + position);
+        holder.imageItem.setOnClickListener(cityListActivity);
 
         holder.txtTitle.setText(this.placeName[position]);
         try {

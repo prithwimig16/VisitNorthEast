@@ -17,11 +17,13 @@
             android:theme="@style/AppTheme.StatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".activities.CityListActivity"></activity>
+        <activity android:name=".activities.CityListActivity" />
+        <activity android:name=".activities.CityListDetailsActivity"></activity>
     </application>
 
 </manifest>

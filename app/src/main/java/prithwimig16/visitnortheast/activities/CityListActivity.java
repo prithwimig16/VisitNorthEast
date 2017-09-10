@@ -1,5 +1,6 @@
 package prithwimig16.visitnortheast.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,11 +27,17 @@ public class CityListActivity extends AppCompatActivity implements View.OnClickL
         this.gridView = (GridView) findViewById(R.id.gridview_city_activity);
         this.adapter = new CityListAdapter(this, this, R.layout.single_view_city_list);
 
+
     }
 
     @Override
     public void onClick(View v) {
 
+        Intent i = new Intent(CityListActivity.this, CityListDetailsActivity.class);
+        i.putExtra("stateName", v.getTag().toString());
+        startActivity(i);
+
     }
+
 
 }
