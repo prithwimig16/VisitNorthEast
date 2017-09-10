@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="prithwimig16.visitnortheast.activities.CityListActivity">
 
 
@@ -30,17 +31,18 @@
         android:padding="10dp">
 
         <GridView
+            android:id="@+id/gridview_city_activity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:columnWidth="125dp"
+            android:horizontalSpacing="5dp"
             android:numColumns="2"
             android:scrollbars="vertical"
             android:verticalSpacing="5dp"
             android:visibility="visible">
-
         </GridView>
     </RelativeLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
