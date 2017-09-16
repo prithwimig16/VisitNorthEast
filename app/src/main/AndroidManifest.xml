@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".activities.HomeActivity" />
         <activity android:name=".activities.CityListActivity" />
-        <activity android:name=".activities.CityListDetailsActivity"></activity>
+        <activity android:name=".activities.CityListDetailsActivity" />
+        <activity android:name=".activities.ShowListActivity"></activity>
     </application>
 
 </manifest>

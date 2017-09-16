@@ -9,6 +9,7 @@
     <string name="home_tag0">Visit North</string>
     <string name="home_title">Visit NorthEast</string>
     <string name="city_title">Sikkim Travel Guide</string>
+    <string name="empty_list_text">No Data Available!</string>
 
 
 </resources>
