@@ -15,6 +15,7 @@ import com.squareup.picasso.Picasso;
 
 import prithwimig16.visitnortheast.R;
 import prithwimig16.visitnortheast.activities.CityListActivity;
+import prithwimig16.visitnortheast.activities.ShowListActivity;
 
 /**
  * Created by Prithwi on 10/09/17.
@@ -44,6 +45,10 @@ public class CityListAdapter extends ArrayAdapter {
         this.layoutResourceId = layoutResourceId;
         this.context = context;
         this.cityListActivity = cityListActivity;
+    }
+
+    public CityListAdapter(ShowListActivity showListActivity, int single_list_item) {
+        super(showListActivity, single_list_item);
     }
 
     @Override

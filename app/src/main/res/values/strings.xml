@@ -10,6 +10,8 @@
     <string name="home_title">Visit NorthEast</string>
     <string name="city_title">Sikkim Travel Guide</string>
     <string name="empty_list_text">No Data Available!</string>
+    <string name="facebook_app_id">359061447850882</string>
+    <string name="fb_login_protocol_scheme">fb359061447850882</string>
 
 
 </resources>

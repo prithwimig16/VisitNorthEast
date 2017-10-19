@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.GridView;
 
+import org.json.JSONObject;
+
 import prithwimig16.visitnortheast.R;
 import prithwimig16.visitnortheast.adapter.CityListAdapter;
 
@@ -13,12 +15,24 @@ public class CityListActivity extends AppCompatActivity implements View.OnClickL
     GridView gridView;
     CityListAdapter adapter;
 
-
+    JSONObject fbResponse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city_list);
+        Intent intent = getIntent();
+        String jsondata = intent.getStringExtra("userProfile");
+
+        try {
+            fbResponse = new JSONObject(jsondata);
+            String user_email = fbResponse.get("email").toString();
+            String user_name = fbResponse.get("name").toString();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         init();
         this.gridView.setAdapter(this.adapter);
     }

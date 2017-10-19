@@ -1,5 +1,6 @@
 package prithwimig16.visitnortheast.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -96,7 +97,9 @@ public class CityListDetailsActivity extends AppCompatActivity implements View.O
                 break;
 
             case R.id.rl_one_to_saven_days:
-                finish();
+                Intent i = new Intent(CityListDetailsActivity.this, ShowListActivity.class);
+                i.putExtra("place_name", this.stateName);
+                startActivity(i);
                 break;
 
             case R.id.rl_things_to_do:
