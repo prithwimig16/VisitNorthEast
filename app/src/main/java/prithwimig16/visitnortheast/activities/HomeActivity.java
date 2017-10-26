@@ -3,6 +3,7 @@ package prithwimig16.visitnortheast.activities;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,9 @@ import com.facebook.GraphResponse;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import org.json.JSONObject;
 
@@ -26,7 +30,7 @@ import java.util.Arrays;
 
 import prithwimig16.visitnortheast.R;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
 
     TextView tvSigInLater;
     ImageView loginManual, loginwithFb, loginWithGoogle;
@@ -54,6 +58,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         this.tvSigInLater = (TextView) findViewById(R.id.tv_signin_ltr);
         this.tvSigInLater.setOnClickListener(this);
         this.callbackManager = CallbackManager.Factory.create();
+
+
     }
 
 
@@ -70,10 +76,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.img_g_logo:
+                GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                        .requestEmail()
+                        .build();
                 break;
 
             case R.id.tv_signin_ltr:
                 Intent i = new Intent(HomeActivity.this, CityListActivity.class);
+                i.putExtra("isSigninLater", true);
                 startActivity(i);
                 break;
         }
@@ -142,5 +152,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
     }
 }

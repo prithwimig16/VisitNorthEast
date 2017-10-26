@@ -48,9 +48,9 @@ public class CustomTitleTextView extends android.support.v7.widget.AppCompatText
         if (!this.isInEditMode()) {
 
             if (style == Typeface.BOLD) {
-                super.setTypeface(Config.OpenSans_Regular);
+                //super.setTypeface(Config.OpenSans_Regular);
             } else {
-                super.setTypeface(Config.OpenSans_Light);
+                //super.setTypeface(Config.OpenSans_Light);
             }
             super.setTextSize(16);
         }

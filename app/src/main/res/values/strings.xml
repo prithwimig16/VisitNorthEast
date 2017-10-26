@@ -12,6 +12,7 @@
     <string name="empty_list_text">No Data Available!</string>
     <string name="facebook_app_id">359061447850882</string>
     <string name="fb_login_protocol_scheme">fb359061447850882</string>
-
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
 
 </resources>
